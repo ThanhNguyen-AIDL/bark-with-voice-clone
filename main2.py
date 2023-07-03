@@ -2,9 +2,7 @@ from bark import SAMPLE_RATE, generate_audio, preload_models
 from IPython.display import Audio
 from scipy.io.wavfile import write as write_wav
 
-
 if __name__ == '__main__':
-
     # download and load all models
     preload_models()
 
@@ -19,5 +17,4 @@ if __name__ == '__main__':
     # play text in notebook
     # Audio(audio_array, rate=SAMPLE_RATE)
 
-
-    write_wav("/path/to/audio.wav", SAMPLE_RATE, audio_array)
+    write_wav("/Users/thanhnguyen/PycharmProjects/bark-with-voice-clone/audio.wav", SAMPLE_RATE, audio_array)
